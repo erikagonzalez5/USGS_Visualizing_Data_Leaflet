@@ -70,7 +70,7 @@ d3.json(geoData).then(function(data) {
         }
     }).addTo(myMap)
         //creating the legend
-    let legend = L.control({ position: "bottomright"});
+    let legend = L.control({ position: "bottomleft"});
     legend.onAdd = function () {
             let div = L.DomUtil.create("div", "info legend");
             let magnitudes = [1, 2, 3, 4, 5];
